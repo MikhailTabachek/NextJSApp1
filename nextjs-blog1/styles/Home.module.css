@@ -108,6 +108,17 @@
   margin-left: 0.5rem;
 }
 
+.pages{
+  color:red;
+  font-size: x-large;
+  margin-top: 30px;
+}
+
+.button1{
+  height: 20px;
+  width: 50%;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
@@ -127,3 +138,4 @@
     filter: invert(1);
   }
 }
+
