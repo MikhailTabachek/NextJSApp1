@@ -47,6 +47,7 @@ export default function Layout({children, home}){
               alt=""
             />
             <h1 className={utilStyles.heading2Xl}> {name}</h1>
+            <h1>With home</h1>
           </>
         ):(
           <>
@@ -65,6 +66,7 @@ export default function Layout({children, home}){
                 {name}
               </Link>
             </h2>
+            <h1>Without home</h1>
           </>
         )}
       </header>
