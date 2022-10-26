@@ -18,13 +18,10 @@ export default function FirstPost(){
         />
         </Head>
         <h1>First Post!</h1>
+        this is inside the layout
+        <p> This is a test Next App</p>
+        
         <Link href="/">Back to main page </Link>
-        <img  style={{heigth: '10%', width:'10%'}} src="/images/Ava.png" />
-        <Image
-          src="/images/Ava.png" 
-          width={30}
-          height={30}
-        />
     </Layout>
     </>
   ) 
