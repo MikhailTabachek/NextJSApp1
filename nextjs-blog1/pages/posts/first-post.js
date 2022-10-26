@@ -19,7 +19,7 @@ export default function FirstPost(){
         </Head>
         <h1>First Post!</h1>
         <Link href="/">Back to main page </Link>
-        <img  style={{heigth: '30%', width:'30%'}} src="/images/Ava.png" />
+        <img  style={{heigth: '10%', width:'10%'}} src="/images/Ava.png" />
         <Image
           src="/images/Ava.png" 
           width={30}
