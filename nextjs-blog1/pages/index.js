@@ -57,8 +57,14 @@ export default function Home({allPostsData}) {
               </>}
               <br />
 
-              {<>
-                {tags} <h4> Tags!</h4>
+              {tags? 
+                <>
+                {Object.keys(tags).map((tag, i) => (
+                  <h4>#{tags[tag]} </h4>
+
+                ))}
+              </>: <>
+                  No tags yet!
               </>}
               
             </li>
