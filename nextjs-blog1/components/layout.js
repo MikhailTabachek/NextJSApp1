@@ -11,12 +11,6 @@ export const siteTitle = "Test Website"
 
 export default function Layout({children, home}){
 
-  function test(){
-    console.log('Home', home)
-  }
-
-  test()
-
   return(
   <>
     <div className={styles.container}>
@@ -46,8 +40,8 @@ export default function Layout({children, home}){
               width={144}
               alt=""
             />
-            <h1 className={utilStyles.heading2Xl}> {name}</h1>
-            <h1>With home</h1>
+            <h1 className={utilStyles.heading2Xl}> Hello, {name} !</h1>
+            {/* <h1>Please pick your stock below</h1> */}
           </>
         ):(
           <>
@@ -62,11 +56,9 @@ export default function Layout({children, home}){
                 />
             </Link>
             <h2 className={utilStyles.headingLg}>
-              <Link href="/">
                 {name}
-              </Link>
             </h2>
-            <h1>Without home</h1>
+            {/* <h1>Here are the stocks you've looked at: </h1> */}
           </>
         )}
       </header>
