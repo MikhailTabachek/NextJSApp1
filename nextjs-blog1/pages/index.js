@@ -22,6 +22,8 @@ export default function Home({allPostsData}) {
   //   const [chosenStocks, setChosenStocks] = useState([])
   // }
 
+  console.log("This", {allPostsData})
+
 
   return (
     <Layout home>
@@ -34,13 +36,31 @@ export default function Home({allPostsData}) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({id, date, title}) => (
+          {allPostsData.map(({id, date, title, article, tags}) => (
             <li className={utilStyles.listItem} key={id}>
               {title}
               <br />
               {id}
               <br />
               {date}
+              <br />
+              {article ? 
+              <>
+              <h3>Article:</h3>
+                {article}
+                {/* {id.tags.map((tag)=>(
+                  <h4>{tag}</h4>
+                ))} */}
+              </> :
+              <>
+                <h3> This post has no article :(( </h3>
+              </>}
+              <br />
+
+              {<>
+                {tags} <h4> Tags!</h4>
+              </>}
+              
             </li>
           ))}
         </ul>
